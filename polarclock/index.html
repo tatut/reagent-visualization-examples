@@ -1,0 +1,11 @@
+<html>
+  <head>
+    <script type="text/javascript" src="out/goog/base.js"> </script>
+    <script type="text/javascript" src="bug.js"> </script>
+    <script type="text/javascript">goog.require("bug");</script>
+    <title>Component using local state and having params deref'd by parent -- bug?</title>
+  </head>
+  <body onload="bug.main()">
+    <div id="bug1"/>
+  </body>
+</html>

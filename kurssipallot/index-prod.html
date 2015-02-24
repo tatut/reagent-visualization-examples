@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <style>
+      body { background-color: black; }
+      .wrapper {
+         width: 960px;
+         margin: auto;
+         background-color: #eeeeee;
+
+      }
+    </style>
+  </head>
+  <body onload="visu.main.main()">
+    <div class="wrapper">
+      <h1>CLJS Visualisaatio: kurssiympyrät</h1>
+      <div id="visuapp"></div>
+      <textarea id="kurssidata" cols="80" rows="10">
+COURSEID,CATEGORY,NAME,PARTICIPANTS
+100,BI,Data Vault saunailta,11
+101,MS,Microsoftin Azure-pilvipalvelu,6
+102,Misc,Monthly Movie,6
+103,Map,Oskari.org,22
+104,UX,Sisko Ad hoc: Design osana ohjelmistokehitystä,8
+      </textarea>
+      <button onclick="visu.main.paivita()">Päivitä!</button>
+    </div>
+    <script src="visu.js" type="text/javascript"></script>
+  </body>
+</html>
